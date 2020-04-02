@@ -1,0 +1,101 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Measure Data",
+            "name": "measure",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "card": {
+            "displayName": "Card Settings",
+            "properties": {
+                "titleText": {
+                    "displayName": "Title Text",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "titleColor": {
+                    "displayName": "Title Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "titleSize": {
+                    "displayName": "Title Font Size",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "contentColor": {
+                    "displayName": "Content Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "contentSize": {
+                    "displayName": "Content Font Size",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "flashColor": {
+                    "displayName": "Flash Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "flashType": {
+                    "displayName": "Flash Type",
+                    "type": {
+                        "enumeration": [
+                            {
+                                "displayName": "None",
+                                "value": "none"
+                            },
+                            {
+                                "displayName": "Blip",
+                                "value": "blip"
+                            },
+                            {
+                                "displayName": "Two Flashes",
+                                "value": "two"
+                            },
+                            {
+                                "displayName": "Three Flashes",
+                                "value": "three"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "measure": {
+                        "max": 1
+                    }
+                }
+            ],
+            "single": {
+                "role": "measure"
+            }
+        }
+    ]
+}
